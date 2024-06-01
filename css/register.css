@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+   --purple:#deadad;
+   --red:#620d04;
+   --orange:#F5DAD2;
+   --black:#333;
+   --white:#fff;
+   --light-color:#666;
+   --light-white:#ccc;
+   --light-bg:#f5f5f5;
+   --border:.1rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --cream1:#DFD0B8;
+   --cream2:#AF8F6F;
+   --cream3:#74512D;
+   --cream4:#543310;
+   --darkblue:#153448;
+   --lightblue:#3C5B6F;
+   --peach:#EAB2A0;
+   --peach2:#A76F6F;
+
+}
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition:all .2s linear;
+}
+
+*::selection{
+   background-color: var(--cream3);
+   color:var(--white);
+}
+
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+   display: none;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--cream4);
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+/*it will show the padding between each section of the pages*/
+section{
+   padding:13rem 2rem;
+}
+
+
+/*message we got onthe top of all pages */
+.message{
+   position: sticky;
+   top:0;
+   margin-top: 10px;
+margin-left: 320px;
+   max-width: 900px;
+   background-color: var(--cream4);
+   padding:2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 10000;
+   gap:1.5rem;
+   border-radius: 15px;
+}
+
+.message span{
+   font-size: 2rem;
+   color:var(--cream1);
+}
+
+.message i{
+   cursor: pointer;
+   color:red;
+   font-size: 2.5rem;
+   font-weight:bolder;
+}
+
+.message i:hover{
+   transform: rotate(90deg);
+}
+
+/*register */
+
+.register-container{
+    min-height: 100vh;
+    /*add picture there*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+ }
+
+ .register-container form{
+     height: 600px;
+    padding:3rem;
+    width: 45rem;
+    border-radius: 5rem;
+    box-shadow: var(--black);
+    box-shadow: 0 0 140px #0b0c0cd4;
+    background-color: var(--login);
+    text-align: center;
+
+ }
+
+ .register-container form h3{
+    margin-top: 20px;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color:var(--cream1);
+    -webkit-text-stroke-width: 1.9px; /* For Safari/Chrome */
+    -webkit-text-stroke-color: var(--cream3); /* For Safari/Chrome */
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+ }
+
+ .register-container form .register-email-box{
+    width: 100%;
+    width: 100%;
+    border-radius: 1.5rem;
+    background-color: var(--light-bg);
+    padding:1.0rem 2.0rem;
+    font-size: 1.8rem;
+    color:var(--dark);
+    border:var(--border);
+    margin:1.0rem 0;
+    transition: transform 0.3s;
+ }
+
+.register-email-box:hover{
+    transform: scale(1.1);
+
+ }
+
+.register-container form p{
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color:var(--darkblack);
+    font-weight: 500;
+ }
+
+.register-container form p a{
+    color:var(--darkblue);
+    transition: transform 0.3s;
+    font-weight: bolder;
+
+ }
+
+.register-container form p a:hover{
+    transform: scale(2.1);
+   -webkit-text-stroke-width: 1.5px; /* For Safari/Chrome */
+   -webkit-text-stroke-color: var(--black) /* For Safari/Chrome */
+ }
+.register-btn{
+    font-size: 1.8rem;
+    font-weight: 450;
+       color:var(--cream1);
+       padding:1.0rem 2.0rem;
+       border-radius: 1.3rem;
+       border:var(--border);
+       margin:0.5rem 0;
+
+ }
+.register-container .register-btn{
+    margin-top: 28px;
+    background-color: var(--cream4);
+     transition: transform 0.3s;
+ }
+.register-container .register-btn:hover{
+    transform: scale(1.1);
+    color: #DFD0B8;
+    background-color: var(--darkblue);
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: rgb(158, 29, 29);
+
+ }

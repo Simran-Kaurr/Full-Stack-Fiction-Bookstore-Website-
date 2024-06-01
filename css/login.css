@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+   --purple:#E1ACAC;
+   --red:#620d04;
+   --orange:#F5DAD2;
+   --black:#333;
+   --white:#fff;
+   --light-color:#666;
+   --light-white:#ccc;
+   --light-bg:#f5f5f5;
+   --border:.1rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --cream1:#DFD0B8;
+   --cream2:#AF8F6F;
+   --cream3:#74512D;
+   --cream4:#543310;
+   --darkblue:#153448;
+   --lightblue:#3C5B6F;
+   --peach:#EAB2A0;
+   --peach2:#A76F6F;
+
+}
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition:all .2s linear;
+}
+
+*::selection{
+   background-color: var(--cream3);
+   color:var(--white);
+}
+
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+   display: none;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--cream4);
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+/*it will show the padding between each section of the pages*/
+section{
+   padding:13rem 2rem;
+}
+
+
+/*message we got onthe top of all pages */
+.message{
+   position: sticky;
+   top:0;
+   margin-top: 10px;
+margin-left: 320px;
+   max-width: 900px;
+   background-color: var(--cream4);
+   padding:2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 10000;
+   gap:1.5rem;
+   border-radius: 15px;
+}
+
+.message span{
+   font-size: 2rem;
+   color:var(--cream1);
+}
+
+.message i{
+   cursor: pointer;
+   color:red;
+   font-size: 2.5rem;
+   font-weight:bolder;
+}
+
+.message i:hover{
+   transform: rotate(90deg);
+}
+
+
+/*lgin button*/
+
+.login-btn{
+   display: inline-block;
+   margin-top: 1rem;
+   padding:1rem 3rem;
+   cursor: pointer;
+   color:var(--cream1);
+   font-size: 1.8rem;
+   border-radius: .5rem;
+   text-transform: capitalize;
+}
+
+.login-btn:hover,
+.option-btn:hover,
+.delete-btn:hover{
+   background-color: var(--darkblue);
+}
+
+.white-btn,
+.login-btn{
+   background-color: var(--cream1);
+}
+
+
+
+.delete-btn{
+   background-color: var(--red);
+}
+
+ .login-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:8rem;
+ }
+
+ .login-container form{
+    height: 600px;
+    padding:5rem;
+    width: 46rem;
+    border-radius: 7rem;
+    box-shadow: var(--box-shadow);
+    box-shadow: 0 0 140px #657b8696;
+    background-color: #06050594;
+    text-align: center;
+ }
+
+ .login-container form h3{
+    margin-top: 20px;
+   font-size: 4rem;
+   margin-bottom: 2rem;
+   text-transform: uppercase;
+   color:var(--cream1);
+   -webkit-text-stroke-width: 0.5px; /* For Safari/Chrome */
+   -webkit-text-stroke-color: var(--cream1); /* For Safari/Chrome */
+   text-shadow: var(--black);
+ }
+
+ .login-container form .login-emailf-box{
+    width: 100%;
+   border-radius: 1.5rem;
+   background-color: var(--light-bg);
+   padding:1.2rem 2.0rem;
+   font-size: 1.8rem;
+   color:var(--dark);
+   border:var(--border);
+  margin:1.0rem 0;
+   transition: transform 0.3s;
+ }
+
+.login-emailf-box:hover{
+    transform: scale(1.1);
+ }
+
+.login-btn{
+    font-size: 1.8rem;
+       color:var(--black);
+       padding:1.2rem 2.4rem;
+       border-radius: 1.3rem;
+       border:var(--cream1);
+       margin:2.5rem 0;
+       transition: transform 0.3s;
+ }
+ .login-container.login-btn{
+    margin-top: 56px;
+    background-color: var(--cream1);
+     transition: transform 0.3s;
+ }
+ .login-container .login-btn:hover{
+    transform: scale(1.1);
+    -webkit-text-stroke-width: 0.5px;
+    color: #dfcdbb;
+    -webkit-text-stroke-color:var(--cream1);
+ }
+
+ .login-container form p{
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    color:var(--peach);
+
+ }
+
+ .login-container form p a{
+    font-weight: bolder;
+    color:var(--cream1);
+    transition: transform 0.3s;
+ }
+ .login-container form p a:hover{
+    transform: scale(1.5);
+   -webkit-text-stroke-width: 0.5px; /* For Safari/Chrome */
+   -webkit-text-stroke-color: var(--cream1); /* For Safari/Chrome */
+
+ }
+
+
+
+
+ .social{
+    margin-top: 40px;
+    display: flex;
+    font-size: larger;
+  }
+  .social div{
+    background:var(--black);
+    height: 33px;
+    width: 230px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 5px;
+    background-color: #435B66;
+    color: #eaf0fb;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s
+
+  }
+  a {
+    color: var(--light-bg);
+ }
+
+  .social div:hover{
+    background-color: var(--cream2);
+ transform: scale(1.2);
+
+  }
+  .social .fb{
+    margin-left: 25px;
+
+  }
+  .social i{
+    margin-right: 4px;
+
+  }
+ /*end of login with google and fb*/
